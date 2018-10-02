@@ -1,0 +1,8 @@
+<label><b>Week 5</b></label><br>
+<button 
+  class="btn btn-primary" 
+  (click)="onCreationStatus()">Tampilan Detail</button><br>
+  {{tulisan}}
+<p [ngClass] = "{online: angka > 4}"
+[ngStyle] = "{backgroundColor: angka > 4? 'black' : 'transparant'}"
+*ngFor="let angka of log">{{angka}}</p>
